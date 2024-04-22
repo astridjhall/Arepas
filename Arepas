@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arepas</title>
+    <style>
+      body {
+        background-color: white;
+        background-image: radial-gradient(
+          circle at 32.2% 83.5%,
+          rgb(239, 167, 167) 0%,
+          rgb(215, 123, 191) 90%
+        );
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        color: white;
+        width: 50%;
+        padding: 30px;
+        margin: 60px auto;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid white;
+        padding: 20px;
+        border-radius: 4px;
+      }
+      h2 {
+        text-align: center;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 24px;
+      }
+      img {
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+        border-radius: 4px;
+      }
+
+      button {
+        background: #c54c82;
+        border: none;
+
+        font-size: 42px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        color: white;
+        display: block;
+        padding: 10px 20px;
+        transition: opacity 150ms ease-in-out;
+        cursor: pointer;
+        opacity: 1;
+        box-shadow: 0 1px 20px rgba(0, 0, 0, 0.5);
+        margin: 30px auto;
+      }
+      button:hover {
+        opacity: 0.9;
+      }
+      a {
+        color: #fdfdcb;
+      }
+      footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Arepas</h1>
+      <h2>A Scrumptious Snack</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/967/original/Arepas.jpg?1713725276"
+        alt="Arepa"
+      />
+      <hr />
+      <p>
+        <strong><span style="color: #c54c82"> Arepas</span></strong> are a type
+        of food made of ground maize dough stuffed with a filling, eaten in
+        northern parts of South America since pre-Columbian times, and notable
+        primarily in the cuisine of <em>Colombia</em> and <em>Venezuela</em>,
+        but also present in Bolivia, Ecuador, and Central America. <br />
+        They can have different fillings such as meat, chicken or cheese.
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Arepa" target="_blank" class="read"
+        >Learn more about arepas</a
+      >
+      <button class="btn">🫓 Get my arepa recipe</button>
+      <footer>This page was built by Astrid Hall</footer>
+    </div>
+    <script>
+      document.querySelector(".btn").addEventListener("click", function () {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        if (name.length > 0 && email.length > 0) {
+          alert("Thanks " + name + ", the arepa recipe is headed your way!");
+        } else {
+          alert(
+            "Oops! You forgot to input your contact details. Please try again."
+          );
+        }
+      });
+    </script>
+  </body>
+</html>
